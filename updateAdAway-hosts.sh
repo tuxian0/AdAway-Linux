@@ -10,6 +10,7 @@ fi
 curl -L "http://adaway.org/hosts.txt" >> "$srclst"
 curl -L "http://hosts-file.net/ad_servers.asp" >> "$srclst"
 curl -L "http://winhelp2002.mvps.org/hosts.txt" >> "$srclst"
+echo "127.0.0.1       s.ytimg.com" >> "$srclst"
 
 sudo cp "$srclst" /etc/hosts
 
